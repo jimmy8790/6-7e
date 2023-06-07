@@ -1,0 +1,44 @@
+.wrap{
+    width: 800px;
+    height: 1000px;
+    background-color: violet;
+}
+
+.container{
+    width: 200px;
+    height: 800px;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*align-content: stretch;*/
+    align-items: end;
+    /*justify-content: center;*/
+}
+.container .item{
+    background-color: gold;
+    border: 3px dotted black;
+}
+.container .item:nth-child(1){
+    width: 100px;
+    height: 100px;
+}
+
+.container .item:nth-child(2){
+    width: 140px;
+    height: 70px;
+}
+
+.container .item:nth-child(3){
+    width: 80px;
+    height: 120px;
+    z-index: 5;
+    position: relative;
+}
+
+.container .item:nth-child(4){
+    width: 110px;
+    height: 70px;
+    position: relative;
+    z-index: 3;
+}

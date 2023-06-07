@@ -1,0 +1,39 @@
+.wrap{
+    width: 800px;
+    height: 800px;
+    background-color: violet;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: royalblue;
+}
+.container .item{
+    background-color: gold;
+    border: 3px dashed black;
+}
+.container .item:nth-child(1){
+    width: 100px;
+    height: 100px;
+}
+
+.container .item:nth-child(2){
+    width: 140px;
+    height: 70px;
+}
+
+.container .item:nth-child(3){
+    width: 70px;
+    height: 120px;
+    z-index: 5;
+    position: relative;
+}
+
+.container .item:nth-child(4){
+    width: 110px;
+    height: 70px;
+    position: relative;
+    z-index: 3;
+    top: -50px;
+}
